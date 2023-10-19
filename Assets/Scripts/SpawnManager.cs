@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     private Vector3 spawnPos = new Vector3 (25, 0, 0);
     public float startDelay = 1f;
     public float repeatRate = 3f;
-    private PlayerController playerControllerScript;
+    private DieOnCollision playerControllerScript;
     private float spawnPosX = 25f;
     private float spawnYmin = -2f;
     private float spawnYmax = 3f;
@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnDonut", startDelay, repeatRate);
         InvokeRepeating("SpawnHazardRod", startDelay, repeatRate);
-        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        playerControllerScript = GameObject.Find("Player").GetComponent<DieOnCollision>();
     }
 
     // Update is called once per frame

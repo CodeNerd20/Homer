@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6478349202396296264}
   - component: {fileID: 8727115154794338050}
   - component: {fileID: 6895131575905449064}
+  - component: {fileID: -1977207683617021142}
   m_Layer: 0
   m_Name: HazardRod
   m_TagString: HazardRod
@@ -112,3 +113,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &-1977207683617021142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361267336573130471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dad32bdbe3ff8143a7d3fc629076e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: 0
