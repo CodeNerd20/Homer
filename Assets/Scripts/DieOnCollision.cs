@@ -10,10 +10,15 @@ public class DieOnCollision : MonoBehaviour
     //Animation
     private Animator playerAnim;
 
+    //Audio
+    private AudioSource audioSource;
+    public AudioClip scream;
+
     // Start is called before the first frame update
     void Start()
     {
         playerAnim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,12 +34,14 @@ public class DieOnCollision : MonoBehaviour
             gameOver = true;
             Debug.Log("GameOver!");
             playerAnim.SetBool("Death", true);
+            audioSource.PlayOneShot(scream);
         }
         if (collision.gameObject.CompareTag("HazardRod"))
         {
             gameOver = true;
             Debug.Log("GameOver!");
-            playerAnim.SetBool("Death", true) ;
+            playerAnim.SetBool("Death", true);
+            audioSource.PlayOneShot(scream);
         }
     }
 

@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Player
-    private Rigidbody playerRb;
-    private Animator playerAnim;
+    public Rigidbody playerRb;
+    public Animator playerAnim;
 
     //Jumping
     public float jumpForce;
